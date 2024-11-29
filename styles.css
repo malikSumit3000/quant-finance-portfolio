@@ -1,93 +1,157 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    background: linear-gradient(135deg, #5A9BD5, #2F3C7E);
+    color: #fff;
+    scroll-behavior: smooth;
 }
 
 header {
-    background: #00509E;
-    color: white;
-    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 header ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 header ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
 }
 
 #hero {
-    background: #F4F4F4;
+    background: url('your-image-url.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .cta {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #00509E;
-    color: white;
+    background: #FFD700;
+    color: black;
+    padding: 0.8rem 2rem;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #F9A825; /* Darker gold on hover */
 }
 
 section {
     padding: 2rem 1rem;
+    text-align: center;
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 80px; /* To avoid overlap with the fixed header */
 }
 
 h2 {
-    color: #00509E;
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
 }
 
-.project {
-    background: #EAF6FF;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
-form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
 }
 
-button {
-    background: #00509E;
-    color: white;
+form button {
+    background: #FFD700;
+    color: black;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #F9A825;
 }
 
 footer {
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 1rem;
-    background: #00509E;
-    color: white;
+    color: #fff;
+    margin-top: 2rem;
 }
