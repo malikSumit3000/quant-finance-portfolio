@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quant Finance Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>Quant Finance Journey</h1>
+            <h1>Quantify with Malik</h1>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -21,28 +22,31 @@
     </header>
 
     <section id="hero">
-        <h2>Bridging Data, Finance, and Innovation</h2>
-        <p>Welcome to my journey of mastering quantitative finance.</p>
-        <a href="#projects" class="cta">Explore Projects</a>
+        <div class="hero-content">
+            <h2>Bridging Data, Finance, and Innovation</h2>
+            <p>Explore my journey in Quantitative Finance, from projects to insights.</p>
+            <a href="#projects" class="cta">Explore Projects</a>
+        </div>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm [Your Name], a passionate quant finance enthusiast with expertise in statistics, Python, SQL, and economics.</p>
-        <p>I aim to solve real-world financial challenges using data-driven strategies.</p>
+        <p>Hi, I'm [Your Name], a quant finance enthusiast with expertise in statistics, Python, SQL, and economics. I create data-driven solutions for financial markets.</p>
     </section>
 
     <section id="projects">
         <h2>Projects & Case Studies</h2>
-        <div class="project">
-            <h3>Portfolio Optimization</h3>
-            <p>Analyzed risk-return trade-offs using Python and built an interactive dashboard.</p>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Portfolio Optimization</h3>
+                <p>Using Python to analyze risk and return in asset portfolios. Interactive dashboards included.</p>
+            </div>
+            <div class="project-card">
+                <h3>Algorithmic Trading</h3>
+                <p>Developed and backtested trading strategies with Python, focusing on market efficiency.</p>
+            </div>
+            <!-- Add more projects as needed -->
         </div>
-        <div class="project">
-            <h3>Algorithmic Trading</h3>
-            <p>Developed and backtested a trading strategy with Python.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
 
     <section id="skills">
@@ -63,7 +67,6 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Interested in collaborating or discussing ideas? Reach out!</p>
         <form action="#" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -79,7 +82,13 @@
     </section>
 
     <footer>
-        <p>© 2024 Quant Finance Journey. All rights reserved.</p>
+        <p>© 2024 Quantify with Malik. All rights reserved.</p>
     </footer>
+    
+    <!-- Smooth Scroll Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 </html>
